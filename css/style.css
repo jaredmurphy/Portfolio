@@ -1,0 +1,312 @@
+/*@import url(https://fonts.googleapis.com/css?family=Raleway);*/
+@import url(https://fonts.googleapis.com/css?family=Bitter);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-shadow:  inset 0 0 200px #000000;
+  background-color: #02466D;
+}
+
+
+
+#particles-js{
+  width: 100%;
+  height: 100vh;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+
+p.clear {
+    clear: both;
+}
+
+.center {
+  text-align: center;
+}
+
+#home {
+
+  position: relative; 
+}
+
+#firefly {
+  height: 100%;
+  width: 100%;
+}
+
+.vertical_line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  z-index: 2;
+  border-right: 1px solid rgba(247, 247, 255, 0.15);
+  display: none;
+  box-shadow: 2px -1px 10px rgba(0, 0, 0, 0.25);
+}
+
+.home_menu {
+  position: absolute;
+  transform: rotate(-90deg);
+  display: block;
+  width: 400px;
+  bottom: 180px;
+  left: -170px;
+
+}
+
+.home_menu ul {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.home_menu li{
+  height: 100%;
+  display: inline;
+  float: left;
+  color: rgba(247, 247, 255, 0.5);
+  padding-right: 10px;
+  
+}
+
+.home_menu a {
+  color: rgba(247, 247, 255, 0.5);
+  font-size: 15px;
+  font-family: Inconsolata;
+}
+
+.home_menu a:hover {
+  color: rgba(247, 247, 255, 1);
+}
+
+.nameTag {
+  position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 500px;
+   
+   margin-top: -100px; /* Half the height */
+   margin-left: -250px;
+}
+.nameTag h1 {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  color: rgba(247, 247, 255, 0.75);
+  font-size: 90px; 
+  margin: 0;
+  text-align: center;
+  display: none;
+}
+
+
+.nameTag h3 {
+  color: rgba(247, 247, 255, 0.85);
+  font-size: 50px;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  margin: 0;
+  padding-top: 15px;
+  text-align: center;
+  display: none;
+}
+
+.page {
+  height: 100vh;
+  width: 100%;
+  color: rgba(247, 247, 255, 0.75);
+  font-family: Bitter;
+  margin: 0;
+  padding: 0;
+
+  
+
+}
+
+.page p {
+  font-size: 33px;
+  text-align: center;
+
+}
+
+hr {
+  width: 50px;
+}
+
+
+.content {
+  width: 650px;
+  margin: 0 auto;
+}
+
+#about {
+  
+  height: 300vh;
+}
+
+.profile_pic {
+  text-align: center;
+}
+
+.profile_pic img{
+  margin-top: 35px;
+  max-width: 300px;
+  border-radius: 50%;
+  opacity: 0.85;
+  box-shadow: 0px 0px 10px  rgba(247, 247, 255, 0.75);
+}
+
+#education {
+  margin-top: 80px;
+}
+
+.education {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+
+.education li {
+  list-style: none;
+  display: inline;
+  padding-right: 10px;
+}
+
+.education img {
+  max-width: 180px;
+  border-radius: 50%;
+  opacity: 0.85;
+  box-shadow: 0px 0px 10px  rgba(247, 247, 255, 0.75);
+
+
+}
+
+.imageTitle {
+  border:1px solid #000;
+  height:30px;
+  width:290px;
+  margin-left:10px;
+  color: white;
+}
+
+.education img:hover + .imageTitle {
+  display: block;
+}
+
+#skills {
+  clear: both;
+  padding-top: 80px;
+}
+
+#portfolio {
+  height: 300vh;
+}
+
+.portfolio_content {
+  width: 600px;
+  padding: 0;
+}
+.portfolio_pieces {
+  display: block;
+  text-align: center;
+  padding: 15px;
+}
+
+.portfolio_pieces li{
+
+  list-style: none;
+  width: 100%;
+  padding: 50px 15px 20px 15px;
+  margin: 0;
+  text-align: center;
+  display: none;
+}
+
+.portfolio_pic {
+  width: 558px;
+  position: relative;
+  opacity: .85;
+  transition: all .75s ease;
+}
+
+.hidden {
+  opacity: 0.1;
+}
+
+.portfolio_text {
+  display: none;
+  height: 80%;
+  color: rgba(247, 247, 255, 0.75);
+  position: absolute;
+  width: 100%;
+  transform: translateY(-330px);
+  transition: all 1s ease;
+  text-align: center;
+  margin: 0;
+}
+
+.show {
+  display: block;
+}
+
+.linkPng {
+
+  margin: 0 auto;
+  max-width: 80px;
+}
+
+.linkPng img {
+  max-width:80px;
+  border-radius: 50%;
+
+}
+
+
+#contact {
+  background-color: rgba(247, 247, 255, 0.75);
+  color: #001019;
+  text-align: center;
+  height: 350px;
+  padding: 0;
+  margin: 0 auto;
+
+}
+
+.contacts {
+  padding: 0;
+  margin: 0 auto;
+  bottom: 0;
+}
+
+.contacts li {
+  list-style: none;
+  display: inline;
+  padding: 50px 20px 0px 20px;
+  text-align: center;
+}
+
+.contacts i{
+  color: #02466D;
+}
+
+
+
+
+
