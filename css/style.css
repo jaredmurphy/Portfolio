@@ -45,11 +45,6 @@ p.clear {
   position: relative; 
 }
 
-#firefly {
-  height: 100%;
-  width: 100%;
-}
-
 .vertical_line {
   position: fixed;
   top: 0;
@@ -84,6 +79,7 @@ p.clear {
   float: left;
   color: rgba(247, 247, 255, 0.5);
   padding-right: 10px;
+  transition: all .75s ease;
   
 }
 
@@ -91,6 +87,7 @@ p.clear {
   color: rgba(247, 247, 255, 0.5);
   font-size: 15px;
   font-family: Inconsolata;
+  transition: all .75s ease;
 }
 
 .home_menu a:hover {
@@ -158,7 +155,7 @@ hr {
 
 #about {
   
-  height: 300vh;
+  height: 250vh;
 }
 
 .profile_pic {
@@ -289,10 +286,13 @@ hr {
 
 }
 
+#contact p {
+  padding-top: 30px;
+}
+
 .contacts {
-  padding: 0;
+  padding: 120px 0 0 0;
   margin: 0 auto;
-  bottom: 0;
 }
 
 .contacts li {

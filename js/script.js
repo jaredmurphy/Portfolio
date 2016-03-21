@@ -1,6 +1,7 @@
 $(document).ready(function() {
   console.log('script.js loaded');
 
+  // jquery smooth scrolling
   smoothScroll.init();
 
   // intro animations
@@ -12,28 +13,41 @@ $(document).ready(function() {
   	}, 1000)
   	setTimeout(function() {
   		$('.vertical_line').fadeIn('slow');
-  
   	}, 2500);
   }, 2000);
 
-  //jquery slideshow 
 
 
   // css changes on scroll height
   $(document).scroll(function() {
-
-  	var topOfAbout = $("#about").offset().top;
+  	var topOfContact = $("#contact").offset().top -400;
   	var topOfWorks = $("#portfolio").offset().top;
   	var  boxHeight = $(window).height();
   	$(window).scroll(function() {
   		var topOfWindow = $(window).scrollTop();
-  		if (topOfAbout < topOfWindow) {
-  			$('.aboutLi').css("color", "#F7F7FF");
-  			$('.aboutLi').css("color", "rgba(247, 247, 255, 1)");
-  		}
-  	});
+  		if (topOfContact < topOfWindow) {
+        console.log('hit');
+  			$('.home_menu a').css("color", "rgba(2, 70, 109, 0.75)");
+        $('.home_menu li').css("color", "rgba(2, 70, 109, 0.75)");
+        $('.home_menu a').hover(function() {
+          $(this).css('color', 'rgba(2, 70, 109, 1)');
+          $(this).css('font-weight', 'bold');
+          }, function() {
+          $('.home_menu a').css('color', 'rgba(2, 70, 109, 0.75)');
+          $('.home_menu a').css('font-weight', 'normal');
+        }); // ends hover function
+  		} else if (topOfContact > topOfWindow) {
+        $('.home_menu a').css('color', 'rgba(247, 247, 255, 0.5)');
+        $('.home_menu li').css('color', 'rgba(247, 247, 255, 0.5)');
 
-  });
+        $('.home_menu a').hover(function() {
+          $(this).css('color', 'rgba(247, 247, 255, 1)');
+          }, function() {
+          $('.home_menu a').css('color', 'rgba(247, 247, 255, 0.5)')
+        }); // ends hover function
+      } // ends else if
+  	}); // ends window scroll function
+  }); // ends document scroll function
 
   // skills animation
   var animationOut;
@@ -65,8 +79,4 @@ $(document).ready(function() {
   		$('.portfolio_text').removeClass('show');
   	}
   );
-
-
-
-
-});
+}); // ends document ready function //
