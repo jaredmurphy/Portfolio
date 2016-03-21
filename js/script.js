@@ -1,16 +1,7 @@
 $(document).ready(function() {
   console.log('script.js loaded');
 
-
-
-  //firefly background
- //  $.firefly({
-	// color: 'rgba(247, 247, 255, 0.5)',
-	// minPixel: 1,
-	// maxPixel: 2,
-	// total : 70,
-	// on: '#particles-js'
- //  });
+  smoothScroll.init();
 
   // intro animations
   setTimeout(function() {
