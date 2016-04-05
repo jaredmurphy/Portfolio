@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  console.log('script.js loaded');
 
   // jquery smooth scrolling
   smoothScroll.init();
@@ -25,40 +24,41 @@ $(document).ready(function() {
   	var topOfWorks = $("#portfolio").offset().top;
   	var  boxHeight = $(window).height();
   	$(window).scroll(function() {
-  		//var topOfWindow = $(window).scrollTop();
-  		if (topOfContact < contactLi) {
-        console.log('hit');
-  			$('.home_menu a').css("color", "rgba(2, 70, 109, 0.75)");
-        $('.home_menu li').css("color", "rgba(2, 70, 109, 0.75)");
-        $('.home_menu a').hover(function() {
-          $(this).css('color', 'rgba(2, 70, 109, 1)');
-          $(this).css('font-weight', 'bold');
-          }, function() {
-          $('.home_menu a').css('color', 'rgba(2, 70, 109, 0.75)');
-          $('.home_menu a').css('font-weight', 'normal');
-        }); // ends hover function
-  		} else if (topOfContact > contactLi) {
-        $('.home_menu a').css('color', 'rgba(247, 247, 255, 0.5)');
-        $('.home_menu li').css('color', 'rgba(247, 247, 255, 0.5)');
+  	  if (topOfContact < contactLi) {
+  	    $('.home_menu a').css("color", "rgba(2, 70, 109, 1)");
+            $('.home_menu li').css("color", "rgba(2, 70, 109, 1)");
 
-        $('.home_menu a').hover(function() {
-          $(this).css('color', 'rgba(247, 247, 255, 1)');
-          }, function() {
-          $('.home_menu a').css('color', 'rgba(247, 247, 255, 0.5)')
-        }); // ends hover function
-      } // ends else if
-  	}); // ends window scroll function
+            $('.home_menu a').hover(function() {
+              $(this).css('color', 'rgba(2, 70, 109, 1)');
+              $(this).css('font-weight', '1000');
+             }, function() {
+              $('.home_menu a').css('color', 'rgba(2, 70, 109, 0.75)');
+              $('.home_menu a').css('font-weight', 'normal');
+             }); // ends hover function
+
+  	  } else if (topOfContact > contactLi) {
+            $('.home_menu a').css('color', 'rgba(247, 247, 255, 0.5)');
+            $('.home_menu li').css('color', 'rgba(247, 247, 255, 0.5)');
+
+            $('.home_menu a').hover(function() {
+              $(this).css('color', 'rgba(247, 247, 255, 1)');
+            }, function() {
+              $('.home_menu a').css('color', 'rgba(247, 247, 255, 0.5)')
+            }); // ends hover function
+          } // ends else if
+        }); // ends window scroll function
   }); // ends document scroll function
+
 
   // skills animation
   var animationOut;
   var animationIn;
   $('.skill-front, .skill-back').click(function() {
-  	$('.skill-front, .skill-back').addClass('shake').fadeOut();
-  	setTimeout(function() {
-  		$('.skill-front, .skill-back').removeClass('shake').fadeIn();
-  	}, 1000);
-  });
+    $('.skill-front, .skill-back').addClass('shake').fadeOut();
+    setTimeout(function() {
+      $('.skill-front, .skill-back').removeClass('shake').fadeIn();
+    }, 1000);
+  }); // ends click function
   
 
   // portfolio image hover
@@ -73,11 +73,11 @@ $(document).ready(function() {
   	} else if ($(this).hasClass('chit-chat')) {
   		piece = 'chit-chat';
   	}
-    $('.' + piece + 'Pic').addClass('hidden');
+        $('.' + piece + 'Pic').addClass('hidden');
   	$('.' + piece + 'Text').addClass('show');
-  	}, function() {
-  		$('.portfolio_pic').removeClass('hidden');
-  		$('.portfolio_text').removeClass('show');
-  	}
-  );
+    }, function() {
+        $('.portfolio_pic').removeClass('hidden');
+        $('.portfolio_text').removeClass('show');
+    });// ends hover function
+
 }); // ends document ready function //
