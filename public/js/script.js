@@ -20,12 +20,13 @@ $(document).ready(function() {
 
   // css changes on scroll height
   $(document).scroll(function() {
-  	var topOfContact = $("#contact").offset().top -400;
+  	var topOfContact = $("#contact").offset().top;
+        var contactLi = $('.contactLi').offset().top;
   	var topOfWorks = $("#portfolio").offset().top;
   	var  boxHeight = $(window).height();
   	$(window).scroll(function() {
-  		var topOfWindow = $(window).scrollTop();
-  		if (topOfContact < topOfWindow) {
+  		//var topOfWindow = $(window).scrollTop();
+  		if (topOfContact < contactLi) {
         console.log('hit');
   			$('.home_menu a').css("color", "rgba(2, 70, 109, 0.75)");
         $('.home_menu li').css("color", "rgba(2, 70, 109, 0.75)");
@@ -36,7 +37,7 @@ $(document).ready(function() {
           $('.home_menu a').css('color', 'rgba(2, 70, 109, 0.75)');
           $('.home_menu a').css('font-weight', 'normal');
         }); // ends hover function
-  		} else if (topOfContact > topOfWindow) {
+  		} else if (topOfContact > contactLi) {
         $('.home_menu a').css('color', 'rgba(247, 247, 255, 0.5)');
         $('.home_menu li').css('color', 'rgba(247, 247, 255, 0.5)');
 
