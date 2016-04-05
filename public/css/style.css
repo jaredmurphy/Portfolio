@@ -154,7 +154,6 @@ hr {
 
 #about {
   
-  height: 250vh;
 }
 
 .profile_pic {
@@ -212,9 +211,7 @@ hr {
 }
 
 #portfolio {
-  height: 300vh;
 }
-
 .portfolio_content {
   width: 600px;
   padding: 0;
