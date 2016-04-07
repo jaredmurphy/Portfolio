@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  
 
   // jquery smooth scrolling
   smoothScroll.init();
@@ -8,7 +9,6 @@ $(document).ready(function() {
   	$('.nameTag h1').css("display", "block").addClass("slideInLeft");
   	setTimeout(function() {
   		$('.nameTag h3').css("display", "block").addClass("slideInLeft");
-  		$('.portfolio_pieces li').show().addClass("rollIn");
   	}, 1000)
   	setTimeout(function() {
   		$('.vertical_line').fadeIn('slow');
@@ -22,7 +22,7 @@ $(document).ready(function() {
   	var topOfContact = $("#contact").offset().top;
         var contactLi = $('.contactLi').offset().top;
   	var topOfWorks = $("#portfolio").offset().top;
-  	var  boxHeight = $(window).height();
+
   	$(window).scroll(function() {
   	  if (topOfContact < contactLi) {
   	    $('.home_menu a').css("color", "rgba(2, 70, 109, 1)");
@@ -45,7 +45,15 @@ $(document).ready(function() {
             }, function() {
               $('.home_menu a').css('color', 'rgba(247, 247, 255, 0.5)')
             }); // ends hover function
-          } // ends else if
+          } // ends nav scroll functionality
+
+           if (topOfWorks < contactLi) {
+  		//$('.portfolio_pieces').show().addClass("rollIn");
+  		$('.portfolio_pieces').css("visibility", "visible").addClass("rollIn");
+           }
+
+         
+          
         }); // ends window scroll function
   }); // ends document scroll function
 
