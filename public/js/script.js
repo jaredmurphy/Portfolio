@@ -17,18 +17,34 @@ $(document).ready(function() {
 
   // menu
   $('.menuButton').click(function() {
-      console.log('click');
       $('.menu').toggleClass('show');
-      $('.burger g').toggleClass('bright');
       $('.vertical_line').toggleClass('no_v_line');
+     // $(this).fadeOut();
+      $(this).attr('transform', 'rotate(90)');
+
+//      if ($('.vertical_line').has($(this))) {
+ //         console.log('close animate');
+     //     $('.close').css('display', 'block');
+  //        closeAnimate();
+   //   } else {
+    //      console.log('close reset');
+     //     closeReset();
+      //}
+
   });
 
-  $('.menu div').mouseenter(function() {
-      $(this).animate({borderwidth: 4}, 500);
-  })
-  .mouseleave(function() {
-      $(this).animate({borderwidth: 0}, 500);
-  });
+
+  // close button animate
+  var closeAnimate = function() {
+      //$('.close').css('display', 'block');
+    //  $('.close g').addClass('closeAnimate');
+  }
+
+  var closeReset = function() {
+      $('.close').css({
+          'transform': 'rotateZ(90deg)'
+      });
+  }
 
 
   // css changes on scroll height
