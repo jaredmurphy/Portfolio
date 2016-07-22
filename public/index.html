@@ -13,13 +13,9 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/smooth-scroll.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/particles.js"></script>
-  <script src="js/app.js"></script>
 
 </head>
 <body>
-<section class="page" id="home">
-   <div id="particles-js">
 
       <div class="nameTag">
         <h1 class="animated">Jared Murphy</h1>
@@ -27,186 +23,27 @@
       </div> <!-- ends name tag div -->
 
       <div class="vertical_line line">
-        <ul class="home_menu">
-          <li class="menuLi"><a data-scroll href="#about">ABOUT</a></li>
-          <li>-</li>
-          <li><a data-scroll href="#portfolio">WORKS</a></li>
-          <li>-</li>
-          <li class="contactLi"><a data-scroll href="#contact">CONTACT</a></li>
-          <li>-</li>
-          <li><a href="https://www.github.com/jaredmurphy">GITHUB</a></li>
-        </ul>
+        <!-- hamburger -->
+        <svg class="menuButton burger" width="86" height="60" viewbox="0 0 150 150">
+            <g stroke-width="12">   
+                <line x1="6" y1="6" x2="80" y2="6"></line>
+                <line x1="6" y1="28" x2="80" y2="28"></line>
+                <line x1="6" y1="50" x2="80"
+                y2="50"> </line>
+            </g>
+        </svg>
+        <svg class="menuButton close" width="86" height="60" viewbox="0 0 150 150">
+            <g stroke-width="12">   
+                <line x1="42" y1="6" x2="42" y2="80"></line>
+                <line x1="6" y1="42" x2="80" y2="42"></line>
+            </g>
+        </svg>
       </div> <!-- ends vertical line div -->
-    </div> <!-- ends particle js-->
-  </section> <!-- ends home div-->
-
-  <section id="about" class="page">
-      <div class="content">
-      <hr>
-      <p class="center clear">
-        Jared is a New York City based web developer with a passion for building beautiful and dynamic MVC-driven apps.
-      </p>    
-      <hr>
-
-      <div class="profile_pic clear">
-        <img src="https://i.imgur.com/DpfEHDJ.jpg"/>
-      </div>
-
-      <div id="education">
-        <p class="title education_title">Education</p>
-        <ul class="education">
-          <li>
-            <img src="https://pbs.twimg.com/profile_images/659101523129987072/-uCH2h9A.jpg" title="Simpson College"/>
-          </li>
-          <li>
-            <img src="https://d3c5s1hmka2e2b.cloudfront.net/uploads/topic/image/14/hack_reactor.png"</>
-          </li>
-          <li>
-            <img src="https://generalassemb.ly/online/assets/ga-lockup-logo-9d95d5d0a1c966540edaedcb440b1963.png"/>
-          </li>
-        </ul>
-      </div>
-      
-      <div id="skills">
-        <p class="title"> Skills</p>
-        
-        <dl class="skills-diagram">
-          <div id="back-end-four">
-            <dt class="skill-front animated">Javascript</dt>    
-            <dt class="skill-front animated">jQuery</dt>
-            <dt class="skill-front animated">Angular</dt>
-            <dt class="skill-front animated">CSS3</dt>
-          </div>  
-
-          <div id="back-end-three">
-            <dt class="skill-back animated">Node.js</dt>
-            <dt class="skill-back animated">Rails</dt>
-            <dt class="skill-back animated">Sinatra</dt>
-          </div>
-
-          <div id="back-end-two">
-            <dt class="skill-back animated">MongoDB</dt>
-            <dt class="skill-back animated">PostgreSQL</dt>
-          </div>
-
-          <div id="back-end-one">
-            <dt class="skill-back animated">Ruby</dt>
-          </div>
-        </dl> <!-- ends skills diagram dl -->
-      </div> <!-- ends skills div -->
-    </div> <!-- ends content div -->
-  </section> <!-- ends about section -->
-
-  <section class="page" id="portfolio">
-    <div class="content portfolio_content">
-      <p>Works</p>
-
-      <ul class="portfolio_pieces">
-        <hr>
-        <li class="animated portfolio_pieces">
-          <a class="center">
-            <img src="https://i809.photobucket.com/albums/zz14/strategicwizard/Screen%20Shot%202016-02-20%20at%209.54.26%20AM_zpsm2khwrr0.png" class="portfolio_pic img_hover watch watchPic" value="watch"/>
-            <h2 class="portfolio_text watch img_hover watchText">
-              <br><br>
-              Watch N Learn: <br>
-              Educational Videos Without the Clutter. <br><br>
-              <div class="linkPng">
-                <a href="https://watch-learn.herokuapp.com/"><img src="images/link.png"/></a>
-              </div>
-              Made with: <br>
-              Ruby, Rails, PostgreSQL, jQuery, Bootstrap.
-            </h2>
-          </a>
-        </li> <!-- ends watch n learn item -->
-
-        <li>
-          <hr>
-        </li>
-
-        <li class="animated portfolio_pieces">
-          <a class="center">
-            <img src="https://i.imgur.com/QnoJnsv.png" class="portfolio_pic img_hover climatePic climate"/>
-            <h2 class="portfolio_text img_hover climate climateText">
-              <br>
-              Climate Data: <br>
-              Visualize temperature changes over time. <br><br>
-              <div class="linkPng">
-                <a href="https://climatedata.herokuapp.com/"><img src="images/link.png"/></a>
-              </div>
-              Made with: <br>
-              Ruby, Rails, jQuery, AJAX/JSON/XML, Highcharts.js, Magic.css.
-            </h2>
-          </a>
-        </li> <!-- ends climate Data item -->
-
-        <li>
-          <hr>
-        </li>
-
-        <li class="animated portfolio_pieces">
-          <a class="center">
-            <img src="https://i809.photobucket.com/albums/zz14/strategicwizard/Screen%20Shot%202016-02-20%20at%2010.00.02%20AM_zpsffbeyeos.png" class="portfolio_pic img_hover investPic invest"/>
-            <h2 class="portfolio_text img_hover invest investText">
-              <br>
-              Invest West: <br>
-              Simple front-end landing page. <br><br>
-              <div class="linkPng">
-                <a href="http://investwest.co/"><img src="images/link.png"/></a>
-              </div>
-              Made with: <br>
-              Bootstrap
-            </h2>
-          </a>
-        </li> <!-- ends invest west item -->
-
-        <li>
-          <hr>
-        </li>
-
-        <li class="animated portfolio_pieces">
-          <a class="center">
-            <img src="https://i.imgur.com/nHWU6Ez.png" class="portfolio_pic img_hover chit-chatPic chit-chat"/>
-            <h2 class="portfolio_text img_hover chit-chat chit-chatText">
-              <br>
-              Chit-Chat: <br>
-              Live chat application build with Meteor.js. <br><br>
-              <div class="linkPng">
-                <a href="https://chit-chat-ga.meteor.com/"><img src="images/link.png"/></a>
-              </div>
-              Made with: <br>
-              Meteor.js, CSS3
-            </h2>
-          </a>
-        </li> <!-- ends chit chat item -->
-      </ul> <!-- ends portfolio pieces ul -->
-    </div> <!-- ends portfolio content div -->
-  </section> <!-- ends portfolio div -->
-  
-
-  <section id="contact" class="page">
-    <div class="content">
-      <p> Contact </p>
-      <ul class="contacts">
-        
-        <li>
-          <a href="https://www.github.com/jaredmurphy">
-            <i class="fa fa-github-square fa-5x"></i>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://www.linkedin.com/in/jaredcarlmurphy">
-            <i class="fa fa-linkedin-square fa-5x"></i>
-          </a>
-        </li>
-        
-        <li>
-          <a href="mailto:jaredcmurphy@gmail.com">
-            <i class="fa fa-envelope-square fa-5x"></i>
-          </a>
-        </li>
-      </ul> <!-- ends contacts ul -->
-    </div> <!-- ends content div -->
-  </section> <!-- ends contact section -->
+        <div class="menu">
+          <div>ABOUT</div>
+          <div>WORKS</div>
+          <div>CONTACT</div>
+          <div><a href="https://www.github.com/jaredmurphy">GITHUB</a></div>
+        </div>
 </body>
 </html>

@@ -15,44 +15,26 @@ $(document).ready(function() {
   	}, 2500);
   }, 2000);
 
+  // menu
+  $('.menuButton').click(function() {
+      console.log('click');
+      $('.menu').toggleClass('show');
+      $('.burger g').toggleClass('bright');
+      $('.vertical_line').toggleClass('no_v_line');
+  });
+
+  $('.menu div').mouseenter(function() {
+      $(this).animate({borderwidth: 4}, 500);
+  })
+  .mouseleave(function() {
+      $(this).animate({borderwidth: 0}, 500);
+  });
 
 
   // css changes on scroll height
   $(document).scroll(function() {
-  	var topOfContact = $("#contact").offset().top;
-        var contactLi = $('.contactLi').offset().top;
-  	var topOfWorks = $("#portfolio").offset().top;
 
   	$(window).scroll(function() {
-  	  if (topOfContact < contactLi) {
-  	    $('.home_menu a').css("color", "rgba(2, 70, 109, 1)");
-            $('.home_menu li').css("color", "rgba(2, 70, 109, 1)");
-
-            $('.home_menu a').hover(function() {
-              $(this).css('color', 'rgba(2, 70, 109, 1)');
-              $(this).css('font-weight', '1000');
-             }, function() {
-              $('.home_menu a').css('color', 'rgba(2, 70, 109, 0.75)');
-              $('.home_menu a').css('font-weight', 'normal');
-             }); // ends hover function
-
-  	  } else if (topOfContact > contactLi) {
-            $('.home_menu a').css('color', 'rgba(247, 247, 255, 0.5)');
-            $('.home_menu li').css('color', 'rgba(247, 247, 255, 0.5)');
-
-            $('.home_menu a').hover(function() {
-              $(this).css('color', 'rgba(247, 247, 255, 1)');
-            }, function() {
-              $('.home_menu a').css('color', 'rgba(247, 247, 255, 0.5)')
-            }); // ends hover function
-          } // ends nav scroll functionality
-
-           if (topOfWorks < contactLi) {
-  		//$('.portfolio_pieces').show().addClass("rollIn");
-  		$('.portfolio_pieces').css("visibility", "visible").addClass("rollIn");
-           }
-
-         
           
         }); // ends window scroll function
   }); // ends document scroll function
