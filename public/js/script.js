@@ -17,7 +17,7 @@ $(document).ready(function() {
 
   // menu
   $('.menuButton').click(function() {
-      $('.menu').toggleClass('show');
+      $('.menu').show();
       $('.about').hide();
       $('.work').hide();
       $('.contact').hide();

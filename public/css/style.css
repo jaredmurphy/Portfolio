@@ -16,6 +16,10 @@ a::hover {
     cursor: pointer;
 }
 
+a.link {
+    color: #0968A1;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -162,6 +166,11 @@ html, body {
     font-size: 24px;
 }
 
+.work p {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
 .work h2 {
     margin: 0;
     padding: 10px;
@@ -183,7 +192,6 @@ html, body {
     font-family: "Josefin Sans";
     transition: opacity 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
-    display: inline;
     text-transform: uppercase; 
     font-size: 24px;
 }
@@ -240,6 +248,10 @@ html, body {
     font-size: 10;
 }
 
+.workContent p {
+    max-width: 60%;
+}
+
 
 .work p {
     padding: 10px;
@@ -248,6 +260,10 @@ html, body {
     font-size: 24px;
 }
 
+.contact {
+    display: none;
+    background-color: #5BC0EB;
+}
 
 .contact div {
     margin-top: 50px;
@@ -292,7 +308,8 @@ html, body {
 }
 .show {
   display: block;
-  opacity: 1;
+  display: none;
+  console.log($('.contact'));
 }
 
 .hide {
@@ -335,4 +352,5 @@ html, body {
   text-align: center;
   display: none;
 }
+
 
