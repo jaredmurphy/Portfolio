@@ -18,19 +18,14 @@ $(document).ready(function() {
   // menu
   $('.menuButton').click(function() {
       $('.menu').toggleClass('show');
+      $('.about').hide();
       $('.vertical_line').toggleClass('no_v_line');
-     // $(this).fadeOut();
-      $(this).attr('transform', 'rotate(90)');
 
-//      if ($('.vertical_line').has($(this))) {
- //         console.log('close animate');
-     //     $('.close').css('display', 'block');
-  //        closeAnimate();
-   //   } else {
-    //      console.log('close reset');
-     //     closeReset();
-      //}
+  });
 
+  // about
+  $('.aboutButton').click(function() {
+      $('.about').show();
   });
 
 
