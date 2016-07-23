@@ -11,7 +11,7 @@ $(document).ready(function() {
   	}, 1500);
   }, 1000);
 
-  // menu
+  // show or hide menu
   $('.menuButton').on('click', function() {
       if ($('.menu').is(':visible')) {
             $('.menu').hide();
@@ -22,42 +22,38 @@ $(document).ready(function() {
       }
   });
 
-  // about, work, contact pages
+  // show about, work, contact pages
   $('.menuOption').click(function() {
-      console.log('click');
-      $('.menu').hide();
-      switch (true) {
-          case $(this).hasClass('aboutButton'):
-            $('.about').show();
-            console.log('about')
-            break;
-          case $(this).hasClass('workButton'):
-            $('.work').show();
-            break;
-          case $(this).hasClass('contactButton'):
-            $('.contact').show();
-            break;
-      }
-          
+    $('.menu').hide();
+    switch (true) {
+      case $(this).hasClass('aboutButton'):
+        $('.about').show();
+        console.log('about')
+        break;
+      case $(this).hasClass('workButton'):
+        $('.work').show();
+        break;
+      case $(this).hasClass('contactButton'):
+        $('.contact').show();
+        break;
+    }
   });
 
-  // work content
+  // display appropriate work content
   $('.workHover li').hover(function() {
-
     switch (true) {
-    case $(this).hasClass('current'): 
-        var $content = $('.current');
-        break;
-    case $(this).hasClass('other'):
-        var $content = $('.other');
-        break;
-    case $(this).hasClass('past'):
-        var $content = $('.past');
-        break;
-    default:
-        var $content = $('.blank');
+        case $(this).hasClass('current'): 
+            var $content = $('.current');
+            break;
+        case $(this).hasClass('other'):
+            var $content = $('.other');
+            break;
+        case $(this).hasClass('past'):
+            var $content = $('.past');
+            break;
+        default:
+            var $content = $('.blank');
     }
-
     $('.workContent').hide();
     $content.show();
   });
@@ -74,44 +70,5 @@ $(document).ready(function() {
       });
   }
 
-
-  // css changes on scroll height
-  $(document).scroll(function() {
-
-  	$(window).scroll(function() {
-          
-        }); // ends window scroll function
-  }); // ends document scroll function
-
-
-  // skills animation
-  var animationOut;
-  var animationIn;
-  $('.skill-front, .skill-back').click(function() {
-    $('.skill-front, .skill-back').addClass('shake').fadeOut();
-    setTimeout(function() {
-      $('.skill-front, .skill-back').removeClass('shake').fadeIn();
-    }, 1000);
-  }); // ends click function
-  
-
-  // portfolio image hover
-  var piece;
-  $('.img_hover').hover(function() {
-  	if ($(this).hasClass('watch')){
-  		piece = 'watch';
-  	} else if ($(this).hasClass('climate')) {
-  		piece = 'climate';
-  	} else if ($(this).hasClass('invest')) {
-  		piece = 'invest';
-  	} else if ($(this).hasClass('chit-chat')) {
-  		piece = 'chit-chat';
-  	}
-        $('.' + piece + 'Pic').addClass('hidden');
-  	$('.' + piece + 'Text').addClass('show');
-    }, function() {
-        $('.portfolio_pic').removeClass('hidden');
-        $('.portfolio_text').removeClass('show');
-    });// ends hover function
 
 }); // ends document ready function //
