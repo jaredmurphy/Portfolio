@@ -40,6 +40,26 @@ $(document).ready(function() {
       $('.contact').show();
   });
 
+  // work content
+  $('.workHover li').hover(function() {
+
+    switch (true) {
+    case $(this).hasClass('current'): 
+        var $content = $('.current');
+        break;
+    case $(this).hasClass('other'):
+        var $content = $('.other');
+        break;
+    case $(this).hasClass('past'):
+        var $content = $('.past');
+        break;
+    default:
+        var $content = $('.blank');
+    }
+
+    $('.workContent').hide();
+    $content.show();
+  });
 
   // close button animate
   var closeAnimate = function() {

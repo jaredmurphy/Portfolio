@@ -93,6 +93,7 @@ html, body {
 
 .menu div {
     margin-top: 50px;
+    cursor: pointer;
 }
 
 
@@ -175,6 +176,18 @@ html, body {
     font-size: 44px;
 }
 
+.work h3 {
+    margin: 0;
+    padding: 10px;
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    transition: opacity 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    display: inline;
+    text-transform: uppercase; 
+    font-size: 24px;
+}
+
 .work  {
     background-color: #F6511D;
     display: none;
@@ -182,10 +195,12 @@ html, body {
 }
 
 .workHover {
+    margin-top: 50px;
     padding: 0;
 }
 
 .workHover li{
+    padding: 10px;
     display: inline;
     font-size: 30px;
     font-family: Josefin Sans;
@@ -214,6 +229,15 @@ html, body {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+}
+
+.workContent {
+    display: none;
+    margin-top: 50px;
+}
+
+.workContent h2 {
+    font-size: 10;
 }
 
 
