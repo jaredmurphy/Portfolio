@@ -20,6 +20,7 @@ $(document).ready(function() {
       $('.menu').toggleClass('show');
       $('.about').hide();
       $('.work').hide();
+      $('.contact').hide();
       $('.vertical_line').toggleClass('no_v_line');
 
   });
@@ -32,6 +33,11 @@ $(document).ready(function() {
   // work
   $('.workButton').click(function() {
       $('.work').show();
+  });
+
+  // contact
+  $('.contactButton').click(function() {
+      $('.contact').show();
   });
 
 
