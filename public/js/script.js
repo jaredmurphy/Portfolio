@@ -1,9 +1,5 @@
 $(document).ready(function() {
   
-
-  // jquery smooth scrolling
-  smoothScroll.init();
-
   // intro animations
   setTimeout(function() {
   	$('.nameTag h1').css("display", "block").addClass("slideInLeft");
@@ -12,8 +8,8 @@ $(document).ready(function() {
   	}, 1000)
   	setTimeout(function() {
   		$('.vertical_line').fadeIn('slow');
-  	}, 2500);
-  }, 2000);
+  	}, 1500);
+  }, 1000);
 
   // menu
   $('.menuButton').on('click', function() {
