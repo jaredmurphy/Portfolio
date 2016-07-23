@@ -181,6 +181,42 @@ html, body {
     color: #ffffff;
 }
 
+.workHover {
+    padding: 0;
+}
+
+.workHover li{
+    display: inline;
+    font-size: 30px;
+    font-family: Josefin Sans;
+    position: relative;
+}
+.workHover li span:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.workHover li{ 
+    cursor: pointer;
+}
+
+.workHover li:hover > span:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
 .work p {
     padding: 10px;
     color: #ffffff;
