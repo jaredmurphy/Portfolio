@@ -16,28 +16,33 @@ $(document).ready(function() {
   }, 2000);
 
   // menu
-  $('.menuButton').click(function() {
-      $('.menu').show();
-      $('.about').hide();
-      $('.work').hide();
-      $('.contact').hide();
-      $('.vertical_line').toggleClass('no_v_line');
-
+  $('.menuButton').on('click', function() {
+      if ($('.menu').is(':visible')) {
+            $('.menu').hide();
+            $('.nameTag').show();
+      } else {  
+            $('.page').hide();
+            $('.menu').show();
+      }
   });
 
-  // about
-  $('.aboutButton').click(function() {
-      $('.about').show();
-  });
-
-  // work
-  $('.workButton').click(function() {
-      $('.work').show();
-  });
-
-  // contact
-  $('.contactButton').click(function() {
-      $('.contact').show();
+  // about, work, contact pages
+  $('.menuOption').click(function() {
+      console.log('click');
+      $('.menu').hide();
+      switch (true) {
+          case $(this).hasClass('aboutButton'):
+            $('.about').show();
+            console.log('about')
+            break;
+          case $(this).hasClass('workButton'):
+            $('.work').show();
+            break;
+          case $(this).hasClass('contactButton'):
+            $('.contact').show();
+            break;
+      }
+          
   });
 
   // work content

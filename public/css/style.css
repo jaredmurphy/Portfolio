@@ -34,11 +34,6 @@ html, body {
   z-index: 2;
 }
 
-.no_v_line {
-  border-bottom: 0px solid rgba(247, 247, 255, 0);
-  box-shadow: 10px -1px 10px rgba(0, 0, 0, 0);
-}
-
 .burger {
     position: relative;
     top: 24px;
