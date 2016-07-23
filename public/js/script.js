@@ -31,6 +31,7 @@ $(document).ready(function() {
         console.log('about')
         break;
       case $(this).hasClass('workButton'):
+        $('.workContent').hide();
         $('.work').show();
         break;
       case $(this).hasClass('contactButton'):
@@ -55,8 +56,26 @@ $(document).ready(function() {
             var $content = $('.blank');
     }
     $('.workContent').hide();
+    $('.openSource').hide();
     $content.show();
   });
+
+  // display appropriate open source content
+  $('.openSourceHover li').hover(function() {
+    switch (true) {
+        case $(this).hasClass('contributions'): 
+            var $content = $('.contributed');
+            break;
+        case $(this).hasClass('original'):
+            var $content = $('.originalWork');
+            break;
+        default:
+            var $content = $('.blank');
+    }
+    $('.openSource').hide();
+    $content.show();
+  });
+
 
   // close button animate
   var closeAnimate = function() {
