@@ -28,7 +28,6 @@ $(document).ready(function() {
     switch (true) {
       case $(this).hasClass('aboutButton'):
         $('.about').show();
-        console.log('about')
         break;
       case $(this).hasClass('workButton'):
         $('.workContent').hide();
