@@ -9,7 +9,7 @@ $(document).ready(function() {
   	setTimeout(function() {
   		$('.vertical_line').fadeIn('slow');
         $('.animated').removeClass("animated");
-  	}, 1500);
+  	}, 3000);
   }, 1000);
 
 
@@ -17,12 +17,12 @@ $(document).ready(function() {
   // show or hide menu
   $('.menuButton').on('click', function() {
       if ($('.menu').is(':visible')) {
-            $('.menu').fadeOut();
-            $('.nameTag').fadeIn();
+            $('.menu').hide();
+            $('.nameTag').show();
       } else {  
-            $('.page').fadeOut();
-            $('.menu').fadeIn();
-            $('.nameTag').fadeOut();
+            $('.page').hide();
+            $('.menu').show();
+            $('.nameTag').hide();
       }
   });
 
