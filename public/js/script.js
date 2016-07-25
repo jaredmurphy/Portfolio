@@ -8,17 +8,21 @@ $(document).ready(function() {
   	}, 1000)
   	setTimeout(function() {
   		$('.vertical_line').fadeIn('slow');
+        $('.animated').removeClass("animated");
   	}, 1500);
   }, 1000);
+
+
 
   // show or hide menu
   $('.menuButton').on('click', function() {
       if ($('.menu').is(':visible')) {
-            $('.menu').hide();
-            $('.nameTag').show();
+            $('.menu').fadeOut();
+            $('.nameTag').fadeIn();
       } else {  
-            $('.page').hide();
-            $('.menu').show();
+            $('.page').fadeOut();
+            $('.menu').fadeIn();
+            $('.nameTag').fadeOut();
       }
   });
 
