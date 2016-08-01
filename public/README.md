@@ -1,3 +1,3 @@
-# New Portfolio
+# Portfolio Website
 
-Using: Particles.js, JQuery, Magic.css, Animate.css
+Designed using hand-rolled CSS and jQuery interaction.
