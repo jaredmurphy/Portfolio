@@ -1,18 +1,4 @@
 $(document).ready(function() {
-  
-  // intro animations
-  setTimeout(function() {
-  	$('.nameTag h1').css("display", "block").addClass("slideInLeft");
-  	setTimeout(function() {
-  		$('.nameTag h3').css("display", "block").addClass("slideInLeft");
-  	}, 1000)
-  	setTimeout(function() {
-  		$('.vertical_line').fadeIn('slow');
-        $('.animated').removeClass("animated");
-  	}, 3000);
-  }, 1000);
-
-
 
   // show or hide menu
   $('.menuButton').on('click', function() {
