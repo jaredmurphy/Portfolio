@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
   // show or hide menu
-  $('.menuButton').on('click', function() {
+
+  $('.hamburger-container, .cross-container').on('click', function() {
       if ($('.menu').is(':visible')) {
             $('.menu').hide();
             $('.nameTag').show();
