@@ -3,34 +3,29 @@
 <head>
   <title>Jared Murphy</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/hamburger.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/hamburger.js"></script>
 </head>
 <body>
-        
+
       <!-- landing page -->
       <div class="nameTag">
         <h1>Jared Murphy</h1>
         <h3>Full Stack Developer</h3>
       </div>
 
-      <!-- navigation svg's -->
-      <div class="vertical_line line">
         <!-- hamburger -->
-        <svg class="menuButton burger" width="86" height="60" viewbox="0 0 150 150">
-            <g stroke-width="12">   
-                <line x1="6" y1="6" x2="80" y2="6"></line>
-                <line x1="6" y1="28" x2="80" y2="28"></line>
-                <line x1="6" y1="50" x2="80" y2="50"> </line>
-            </g>
-        </svg>
-      </div> <!-- ends vertical line div -->
-        <svg class="menuButton close" width="86" height="60" viewbox="0 0 150 150">
-            <g stroke-width="12">   
-                <line x1="42" y1="6" x2="42" y2="80"></line>
-                <line x1="6" y1="42" x2="80" y2="42"></line>
-            </g>
-        </svg>
+        <div class="hamburger-container">
+		        <span></span>
+		        <span></span>
+		        <span></span>
+	      </div>
+      	<div class="cross-container">
+      		<span></span>
+      		<span></span>
+      	</div>
 
         <!-- menu -->
         <div class="menu page">
@@ -56,33 +51,33 @@
         <div class="work page">
             <h2> Work</h2>
             <ul class="workHover">
-                <li class="current"> <span>Current</span> </li> 
+                <li class="current"> <span>Current</span> </li>
                 <li> | </li>
-                <li class="other"> <span>Open Source</span> </li> 
+                <li class="other"> <span>Open Source</span> </li>
                 <li> | </li>
-                <li class="past"> <span>Previous</span> </li> 
+                <li class="past"> <span>Previous</span> </li>
             </ul>
             <div>
                 <div class="current workContent">
                     <h3> General Assembly </h3>
                     <h3> WDI Bootcamp Instructor</h3>
                     <br>
-                    <p>Agile, HTML/CSS, Javascript, jQuery, React, <br > 
+                    <p>Agile, HTML/CSS, Javascript, jQuery, React, <br >
                     Express, Node.js, Ruby on Rails, and Databases (PostgreSQL, MongoDB)</p>
-                    
+
                 </div>
                 <div class="past workContent">
                     <h3> IDT Corp </h3>
                     <h3> Software Engineering Intern</h3>
                     <br>
                     <p> Configured automated testing framework to test Android (Java) apps with Ruby</p>
-                    <p> 
+                    <p>
                         Assisted <a href="http://pedul.io" class="link">Pedul</a> in planning
                         and choosing tech stack for their education-driven crowd
-                        funding platform 
+                        funding platform
                     </p>
                     <p> Tested new features on existing apps, and drank a lot of delicous coffee</p>
-                      
+
                 </div>
                 <div class="other workContent">
                     <ul class="openSourceHover">

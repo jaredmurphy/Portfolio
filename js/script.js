@@ -5,7 +5,7 @@ $(document).ready(function() {
       if ($('.menu').is(':visible')) {
             $('.menu').hide();
             $('.nameTag').show();
-      } else {  
+      } else {
             $('.page').hide();
             $('.menu').show();
             $('.nameTag').hide();
@@ -32,7 +32,7 @@ $(document).ready(function() {
   // display appropriate work content
   $('.workHover li').hover(function() {
     switch (true) {
-        case $(this).hasClass('current'): 
+        case $(this).hasClass('current'):
             var $content = $('.current');
             break;
         case $(this).hasClass('other'):
@@ -52,7 +52,7 @@ $(document).ready(function() {
   // display appropriate open source content
   $('.openSourceHover li').hover(function() {
     switch (true) {
-        case $(this).hasClass('contributions'): 
+        case $(this).hasClass('contributions'):
             var $content = $('.contributed');
             break;
         case $(this).hasClass('original'):
