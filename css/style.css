@@ -19,11 +19,6 @@ a.link {
     font-weight: bold;
 }
 
-a.linkYellow {
-    color: #FCB900;
-    font-weight: bold;
-}
-
 
 html, body {
   margin: 0;
@@ -206,14 +201,15 @@ html, body {
     padding: 0;
 }
 
-.workHover li{
+.hoverable li{
     padding: 10px;
     display: inline;
     font-size: 30px;
     font-family: Josefin Sans;
     position: relative;
+    cursor: pointer;
 }
-.workHover li span:before {
+.hoverable li span:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -228,11 +224,7 @@ html, body {
     transition: all 0.3s ease-in-out 0s;
 }
 
-.workHover li{
-    cursor: pointer;
-}
-
-.workHover li:hover > span:before {
+.hoverable li:hover > span:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
@@ -270,14 +262,15 @@ html, body {
     padding: 0;
 }
 
-.openSourceHover li{
+.hoverable li{
     padding: 10px;
     display: inline;
     font-size: 30px;
     font-family: Josefin Sans;
     position: relative;
+    cursor: pointer;
 }
-.openSourceHover li span:before {
+.hoverable li span:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -292,11 +285,7 @@ html, body {
     transition: all 0.3s ease-in-out 0s;
 }
 
-.openSourceHover li{
-    cursor: pointer;
-}
-
-.openSourceHover li:hover > span:before {
+.hoverable li:hover > span:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
