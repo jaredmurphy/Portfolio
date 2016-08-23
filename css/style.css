@@ -86,10 +86,7 @@ html, body {
 .hoverDiv h2 {
     margin: 0;
     padding: 10px;
-    color: #fffff;
-    font-size: 24px;
     color: #ffffff;
-    font-size: 50px;
     font-family: "Josefin Sans";
     transition: opacity 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     cursor: pointer;
@@ -215,15 +212,6 @@ html, body {
 
 .workContent {
     margin-top: 50px;
-}
-
-.workContent h2 {
-    font-size: 10;
-}
-
-.workContent p {
-    max-width: 60%;
-    text-align: center;
 }
 
 .work p {
