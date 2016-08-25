@@ -31,15 +31,15 @@ html, body {
    position: absolute;
    top: 50%;
    left: 50%;
-   width: 500px;
-   margin-top: -100px;
-   margin-left: -250px;
+   width: 31.25em;
+   margin-top: -6.25em;
+   margin-left: -15.625em;
 }
 .nameTag h1 {
   font-family: "Josefin Sans";
   font-weight: 300;
   color: #ffffff;
-  font-size: 90px;
+  font-size: 5.625em;
   margin: 0;
   text-align: center;
 }
@@ -47,25 +47,25 @@ html, body {
 .nameTag h3 {
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 44px;
+  font-size: 2.75em;
   font-family: "Josefin Sans";
   font-weight: 300;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 0.3em;
   text-align: center;
 }
 
 .menu-button {
   position: fixed;
   width: 100%;
-  height: 60px;
+  height: 3.75em;
   z-index: 2;
-  top: 20px;
-  left: 20px;
+  top: 1.25em;
+  left: 1.25em;
 }
 
 .page {
-    padding-top: 120px;
+    padding-top: 7.5em;
     height: 100%;
     width: 100%;
     bottom: 0;
@@ -79,13 +79,13 @@ html, body {
 }
 
 .hoverDiv {
-    margin-top: 50px;
+    margin-top: 3.125em;
     cursor: pointer;
 }
 
 .hoverDiv h2 {
     margin: 0;
-    padding: 10px;
+    padding: 0.25em;
     color: #ffffff;
     font-family: "Josefin Sans";
     transition: opacity 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -93,14 +93,14 @@ html, body {
     position: relative;
     display: inline;
     text-transform: uppercase;
-    font-size: 44px;
+    font-size: 2em;
 }
 
 .hoverDiv h2:before {
     content: "";
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 0.05em;
     bottom: 0;
     left: 0;
     background-color: #ffffff;
@@ -118,13 +118,13 @@ html, body {
 }
 
 .about {
-    padding-top: 170px;
+    padding-top: 10.625em;
     background-color: #4D10AB;
 }
 
 .about h2 {
     margin: 0;
-    padding: 10px;
+    padding: 0.625em;
     color: #ffffff;
     font-family: "Josefin Sans";
     transition: opacity 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -132,14 +132,14 @@ html, body {
     position: relative;
     display: inline;
     text-transform: uppercase;
-    font-size: 44px;
+    font-size: 2.75em;
 }
 
 .about p {
-    padding: 10px;
+    padding: 0.415em;
     color: #ffffff;
     font-family: Raleway;
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 .work  {
@@ -155,7 +155,7 @@ html, body {
 
 .work h2 {
     margin: 0;
-    padding: 10px;
+    padding: 0.625em;
     color: #ffffff;
     font-family: "Josefin Sans";
     transition: opacity 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -163,18 +163,18 @@ html, body {
     position: relative;
     display: inline;
     text-transform: uppercase;
-    font-size: 44px;
+    font-size: 2.75em;
 }
 
 .work h3 {
     margin: 0;
-    padding: 10px;
+    padding: 0.42em;
     color: #ffffff;
     font-family: "Josefin Sans";
     transition: opacity 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 .hoverable {
@@ -182,9 +182,9 @@ html, body {
 }
 
 .hoverable li{
-    padding: 10px;
+    padding: 0.4em;
     display: inline;
-    font-size: 30px;
+    font-size: 1.85em;
     font-family: Josefin Sans;
     position: relative;
     cursor: pointer;
@@ -193,7 +193,7 @@ html, body {
     content: "";
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 0.05em;
     bottom: 0;
     left: 0;
     background-color: #ffffff;
@@ -211,14 +211,14 @@ html, body {
 }
 
 .workContent {
-    margin-top: 50px;
+    margin-top: 3em;
 }
 
 .work p {
-    padding: 10px;
+    padding: 0.4em;
     color: #ffffff;
     font-family: Raleway;
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 .contact {
