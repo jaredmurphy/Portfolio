@@ -1,8 +1,7 @@
 $(document).ready(function() {
 
   // show or hide menu
-
-  $('.hamburger-container, .cross-container').on('click', function() {
+  $('.hamburger-container, .cross-container').click(function() {
       if ($('.menu').is(':visible')) {
             $('.menu').hide();
             $('.nameTag').show();
@@ -65,19 +64,5 @@ $(document).ready(function() {
     $('.openSource').hide();
     $content.show();
   });
-
-
-  // close button animate
-  var closeAnimate = function() {
-      //$('.close').css('display', 'block');
-    //  $('.close g').addClass('closeAnimate');
-  }
-
-  var closeReset = function() {
-      $('.close').css({
-          'transform': 'rotateZ(90deg)'
-      });
-  }
-
 
 }); // ends document ready function //
