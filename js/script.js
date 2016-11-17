@@ -22,6 +22,7 @@ $(document).ready(function() {
       case $(this).hasClass('workButton'):
         $('.workContent').hide();
         $('.work').show();
+        defaultWorkInfo();
         break;
       case $(this).hasClass('contactButton'):
         $('.contact').show();
@@ -29,7 +30,14 @@ $(document).ready(function() {
     }
   });
 
-  // display appropriate work content
+  // display current work info by default
+  var defaultWorkInfo = function() {
+    if ($('.work').css('display') === 'block') {
+      $('.current').show();
+    }
+  }
+
+  // display appropriate work content on hover
   $('.workHover li').hover(function() {
     switch (true) {
         case $(this).hasClass('current'):
