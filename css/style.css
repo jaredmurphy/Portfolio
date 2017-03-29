@@ -70,7 +70,7 @@ html, body {
     width: 100%;
     bottom: 0;
     position: fixed;
-    background-color: #FCB900;
+    background-color: #D33B40;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -230,5 +230,5 @@ html, body {
 }
 
 .contact {
-    background-color: #F6511D;
+    background-color: #0EA58A;
 }
