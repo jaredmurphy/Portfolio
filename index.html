@@ -1,126 +1,135 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Jared Murphy</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/hamburger.css">
-  <link rel="stylesheet" type="text/css" href="css/mobile.css">
+  <head>
+    <title>Jared Murphy</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/hamburger.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+  </head>
+  <body>
+
+    <!-- hamburger -->
+    <div class="menu-button">
+      <div class="hamburger-container">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="cross-container">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <!-- landing page -->
+    <div class="nameTag">
+      <h1>Jared Murphy</h1>
+      <h3>Full Stack Developer</h3>
+    </div>
+
+    <!-- menu -->
+    <div class="menu page">
+      <div class="aboutButton menuOption hoverDiv"><h2>ABOUT</h2></div>
+      <div class="workButton menuOption hoverDiv"><h2>WORK</h2></div>
+      <div class="contactButton menuOption hoverDiv"><h2>CONTACT</h2></div>
+      <a href="https://www.github.com/jaredmurphy"><div class="hoverDiv"><h2>GITHUB</h2></div></a>
+    </div>
+
+    <!-- about page -->
+    <div class="about page">
+      <h2> Hi, I'm Jared </h2>
+      <br/>
+      <p> I'm a web developer in New York City </p>
+      <p> I work at <a href="https://airtailor.com/" class="resume">Air Tailor</a>, where I build full-stack apps in Ruby and Javascript</p>
+      <p> I also like guitars </p>
+      <p> You can find my full resume <a href="https://drive.google.com/file/d/0B8iekp_zt4N_c05TOFVTTmdkWGM/view?usp=sharing" class="resume" target="blank"> Here </a> </p>
+    </div>
+
+    <!-- work page -->
+    <div class="work page">
+      <h2> Work</h2>
+      <ul class="workHover hoverable">
+        <li class="current"> <span>Current</span> </li>
+        <li> | </li>
+        <li class="other"> <span>Open Source</span> </li>
+        <li> | </li>
+        <li class="past"> <span>Previous</span> </li>
+      </ul>
+      <div>
+        <div class="current workContent">
+          <h3> General Assembly </h3>
+          <h3> WDI Bootcamp Instructor</h3>
+          <br>
+          <p>Agile, HTML/CSS, Javascript, jQuery, React, Redux, <br >
+          Express, Node.js, Ruby on Rails, and Databases (PSQL)</p>
+
+        </div>
+        <div class="past workContent">
+          <h3> IDT Corp </h3>
+          <h3> Software Engineering Intern</h3>
+          <br>
+          <p> Configured automated testing framework to test Android (Java) apps with Ruby</p>
+          <p>
+          Assisted <a href="http://pedul.io" class="link">Pedul</a> in planning
+          and choosing tech stack for their education-driven crowd
+          funding platform
+          </p>
+          <p> Tested new features on existing apps, and drank a lot of delicous coffee</p>
+
+        </div>
+        <div class="other workContent">
+          <ul class="openSourceHover hoverable">
+            <li class="contributions"> <span>Contributions</span> </li>
+            <li> | </li>
+            <li class="original"> <span>Personal Projects</span> </li>
+          </ul>
+          <br>
+          <div class="originalWork openSource">
+            <p>
+            <a href="https://opensourcechamp.herokuapp.com/" class="link">Open Source Champion</a>
+            <br>- Battle against github users for the best open source stats
+            - <a href="https://github.com/jaredmurphy/open-source-champion" class="link"> Code </a>
+            </p>
+            <p>
+            <a href="https://github.com/jaredmurphy/CakeScript" class="link">CakeScript</a>
+            <br>- Small Javascript library which uses
+            prototyping to allow more convenient methods, like
+            those you see in Ruby.
+            </p>
+            <p>
+            <a href="https://github.com/jaredmurphy/pleasant_ghost" class="link">PleasantGhost</a>
+            <br>- Boilerplate that handles Node.js, Babel, React, and Redux environment.
+            </p>
+          </div>
+          <div class="contributed openSource">
+            <p><a class="link"  href="http://www.mtastat.us/">MTA STATUS</a> - <a class="link"  href="https://github.com/johnrbell/mta_do"> Code </a></p>
+            <p><a class="link"  href="http://airtailor.com/">Air Tailor</a> - <a class="link"  href="https://github.com/briandangerflynn/airtailorportal"> Code </a></p>
+            <p><a class="link"  href="http://got.bryanmytko.com/">GOTRegex</a> - <a class="link"  href="https://github.com/bryanmytko/regex_game"> Code </a></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- contact page -->
+    <div class="contact page">
+      <a href="https://www.linkedin.com/in/jaredcarlmurphy"><div
+         class="contactLink hoverDiv"><h2>LinkedIn</h2></div></a>
+      <a href="https://twitter.com/_jaredmurphy"><div class="workButton hoverDiv"><h2>Twitter</h2></div>
+        <a href="mailto:jaredcmurphy@gmail.com"><div class="hoverDiv"><h2>Mail</h2></div>
+          <a href="https://www.github.com/jaredmurphy"><div class="hoverDiv"><h2>GITHUB</h2></div></a>
+    </div>
+  </body>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/hamburger.js"></script>
-</head>
-<body>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123579742-1"></script>
+  <script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-        <!-- hamburger -->
-        <div class="menu-button">
-          <div class="hamburger-container">
-  		        <span></span>
-  		        <span></span>
-  		        <span></span>
-  	      </div>
-        	<div class="cross-container">
-        		<span></span>
-        		<span></span>
-        	</div>
-        </div>
-
-        <!-- landing page -->
-        <div class="nameTag">
-          <h1>Jared Murphy</h1>
-          <h3>Full Stack Developer</h3>
-        </div>
-
-        <!-- menu -->
-        <div class="menu page">
-          <div class="aboutButton menuOption hoverDiv"><h2>ABOUT</h2></div>
-          <div class="workButton menuOption hoverDiv"><h2>WORK</h2></div>
-          <div class="contactButton menuOption hoverDiv"><h2>CONTACT</h2></div>
-          <a href="https://www.github.com/jaredmurphy"><div class="hoverDiv"><h2>GITHUB</h2></div></a>
-        </div>
-
-        <!-- about page -->
-        <div class="about page">
-            <h2> Hi, I'm Jared </h2>
-            <br/>
-            <p> I'm a web developer in New York City </p>
-            <p> I work at <a href="https://airtailor.com/" class="resume">Air Tailor</a>, where I build full-stack apps in Ruby and Javascript</p>
-            <p> I also like guitars </p>
-            <p> You can find my full resume <a href="https://drive.google.com/file/d/0B8iekp_zt4N_c05TOFVTTmdkWGM/view?usp=sharing" class="resume" target="blank"> Here </a> </p>
-        </div>
-
-        <!-- work page -->
-        <div class="work page">
-            <h2> Work</h2>
-            <ul class="workHover hoverable">
-                <li class="current"> <span>Current</span> </li>
-                <li> | </li>
-                <li class="other"> <span>Open Source</span> </li>
-                <li> | </li>
-                <li class="past"> <span>Previous</span> </li>
-            </ul>
-            <div>
-                <div class="current workContent">
-                    <h3> General Assembly </h3>
-                    <h3> WDI Bootcamp Instructor</h3>
-                    <br>
-                    <p>Agile, HTML/CSS, Javascript, jQuery, React, Redux, <br >
-                    Express, Node.js, Ruby on Rails, and Databases (PSQL)</p>
-
-                </div>
-                <div class="past workContent">
-                    <h3> IDT Corp </h3>
-                    <h3> Software Engineering Intern</h3>
-                    <br>
-                    <p> Configured automated testing framework to test Android (Java) apps with Ruby</p>
-                    <p>
-                        Assisted <a href="http://pedul.io" class="link">Pedul</a> in planning
-                        and choosing tech stack for their education-driven crowd
-                        funding platform
-                    </p>
-                    <p> Tested new features on existing apps, and drank a lot of delicous coffee</p>
-
-                </div>
-                <div class="other workContent">
-                    <ul class="openSourceHover hoverable">
-                        <li class="contributions"> <span>Contributions</span> </li>
-                        <li> | </li>
-                        <li class="original"> <span>Personal Projects</span> </li>
-                    </ul>
-                    <br>
-                    <div class="originalWork openSource">
-                      <p>
-                        <a href="https://opensourcechamp.herokuapp.com/" class="link">Open Source Champion</a>
-                        <br>- Battle against github users for the best open source stats
-                        - <a href="https://github.com/jaredmurphy/open-source-champion" class="link"> Code </a>
-                      </p>
-                      <p>
-                        <a href="https://github.com/jaredmurphy/CakeScript" class="link">CakeScript</a>
-                        <br>- Small Javascript library which uses
-                        prototyping to allow more convenient methods, like
-                        those you see in Ruby.
-                      </p>
-                      <p>
-                        <a href="https://github.com/jaredmurphy/pleasant_ghost" class="link">PleasantGhost</a>
-                        <br>- Boilerplate that handles Node.js, Babel, React, and Redux environment.
-                      </p>
-                    </div>
-                    <div class="contributed openSource">
-                        <p><a class="link"  href="http://www.mtastat.us/">MTA STATUS</a> - <a class="link"  href="https://github.com/johnrbell/mta_do"> Code </a></p>
-                        <p><a class="link"  href="http://airtailor.com/">Air Tailor</a> - <a class="link"  href="https://github.com/briandangerflynn/airtailorportal"> Code </a></p>
-                        <p><a class="link"  href="http://got.bryanmytko.com/">GOTRegex</a> - <a class="link"  href="https://github.com/bryanmytko/regex_game"> Code </a></p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- contact page -->
-        <div class="contact page">
-          <a href="https://www.linkedin.com/in/jaredcarlmurphy"><div
-          class="contactLink hoverDiv"><h2>LinkedIn</h2></div></a>
-          <a href="https://twitter.com/_jaredmurphy"><div class="workButton hoverDiv"><h2>Twitter</h2></div>
-          <a href="mailto:jaredcmurphy@gmail.com"><div class="hoverDiv"><h2>Mail</h2></div>
-          <a href="https://www.github.com/jaredmurphy"><div class="hoverDiv"><h2>GITHUB</h2></div></a>
-        </div>
-</body>
+gtag('config', 'UA-123579742-1');
+  </script>
 </html>
