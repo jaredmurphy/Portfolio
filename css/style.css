@@ -4,6 +4,15 @@
 :root {
   --header-font: "Josefin Sans";
   --content-font: Raleway;
+  --blue: #0968A1;
+  --light-blue: #5BC0EB;
+  --red: #D33B40;
+  --white:  #ffffff;
+  /*--saphire-blue: #0968A1;*/
+  /*--cyan: #5BC0EB;*/
+  /*--red: #D33B40;*/
+  /*--indigo-dye: #1B4965;*/
+  /*--white: #F7F9F9;*/
  }
 
 * {
@@ -28,17 +37,20 @@ a.link {
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #0968A1;
   height: 100%;
+  background-color: var(--blue);
 }
 
 .nameTag {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 31.25em;
-  margin-top: -6.25em;
-  margin-left: -15.625em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.nameTag h1:hover {
+  cursor: pointer;
 }
 
 .nameTag h1 {
@@ -57,7 +69,7 @@ html, body {
   font-family: var(--header-font);
   font-weight: 300;
   margin: 0;
-  padding-top: 0.3em;
+  padding-top: 1.3em;
   text-align: center;
 }
 
@@ -75,7 +87,7 @@ html, body {
   width: 100%;
   bottom: 0;
   position: fixed;
-  background-color: #D33B40;
+  background-color: var(--red);
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -83,7 +95,8 @@ html, body {
   display: none;
   justify-content: space-around;
   align-content: space-between;
-  padding: 20vh;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
 }
 
 .hoverDiv {
@@ -126,7 +139,6 @@ html, body {
 }
 
 .about {
-  padding-top: 10.625em;
   background-color: #4D10AB;
   overflow: scroll;
 }
@@ -149,9 +161,8 @@ html, body {
   color: #ffffff;
   font-family: var(--content-font);
   font-size: 1.5em;
-  /*max-width: 800px;*/
   max-width: 40em;
-  margin: 1em auto;
+  margin: 1em auto 0;
 }
 
 .resume {
@@ -159,8 +170,8 @@ html, body {
 }
 
 .work  {
-  background-color: #5BC0EB;
-  color: #ffffff;
+  background-color: var(--light-blue);
+  color: var(--white);
 }
 
 .work p {

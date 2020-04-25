@@ -1,21 +1,23 @@
 *{
-	transition:.25s ease-in-out;
+  transition: .25s ease-in-out;
 }
 
 .ham-n-cross {
-	position: relative;
+  position: relative;
 }
+
 .hamburger-container:hover{
-	background-color: #E8E8E8;
-	box-shadow: 0px 0.313em 0.625em rgba(0,0,0,.5)
+ background-color: #E8E8E8;
+ box-shadow: 0px 0.313em 0.625em rgba(0,0,0, .5);
+ cursor: pointer;
 }
+
 .hamburger-container{
-	background-color: #ffffff;
-	border-radius: 10%;
-	width: 3.125em;
-	height: 3.125em;
-	box-shadow: 0px 0.313em 3.125em rgba(0,0,0,0);
-	/*position: fixed;*/
+  background-color: #ffffff;
+  border-radius: 10%;
+  width: 3.125em;
+  height: 3.125em;
+  box-shadow: 0px 0.313em 3.125em rgba(0,0,0,0);
 }
 
 .hamburger-container span{
@@ -27,21 +29,25 @@
   width: 70%;
   height: 0.375em;
   margin-top: 0.313em;
-	margin-right: auto;
-	margin-left: auto;
-	transition-delay:.25s;
+  margin-right: auto;
+  margin-left: auto;
+  transition-delay: .25s;
 }
+
 .hamburger-container.open span{
-	width: 0%;
+  width: 0%;
 }
+
 .hamburger-container.open span:nth-child(1){
-	transition-delay:0s;
+  transition-delay:0s;
 }
+
 .hamburger-container.open span:nth-child(2){
-	transition-delay:.25s;
+  transition-delay:.25s;
 }
+
 .hamburger-container.open span:nth-child(3){
-	transition-delay:.5s;
+  transition-delay:.5s;
 }
 
 .cross-container span{
@@ -53,15 +59,18 @@
   height: 10px;
   margin-top: -10px;
 }
+
 .cross-container span:nth-child(1){
-	transform: rotate(45deg);
-	width: 0px;
+  transform: rotate(45deg);
+  width: 0px;
 }
+
 .cross-container span:nth-child(2){
-	transform: rotate(-45deg);
-	width: 0px;
+  transform: rotate(-45deg);
+  width: 0px;
 }
-.cross-container.open span{
+
+.cross-container.open span {
   width: 50px;
   transition-delay:.75s;
 }

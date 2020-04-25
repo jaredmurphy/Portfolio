@@ -1,8 +1,8 @@
 @media only screen and (max-device-width: 480px) {
 
   .hamburger-container{
-  	width: 6em;
-  	height: 6em;
+    width: 6em;
+    height: 6em;
   }
 
   .hamburger-container span{
@@ -14,15 +14,14 @@
   .cross-container {
     margin-left: 1.2em;
   }
+
   .cross-container span{
     top: -2.5em;
     left: 0.313em;
   }
 
-  .nameTag {
-     width: 37.5em;
-     margin-top: -6.25em;
-     margin-left: -18.75em;
+  .nameTag::hover {
+    cursor: pointer;
   }
 
   .nameTag h1 {
@@ -30,7 +29,14 @@
   }
 
   .nameTag h3 {
+    line-height: 1.5;
+    padding-top: 1.3em;
     font-size: 5em;
+    word-spacing: 30000px;
+  }
+
+  .nameTag h1:hover {
+    cursor: pointer;
   }
 
   .menu-button {
@@ -40,36 +46,36 @@
   }
 
   .page {
-    padding-top: 20em;
-}
+    padding-top 20vh;
+  }
 
   .hoverDiv {
-      margin-top: 7.5em;
+    margin-top: 7.5em;
   }
 
   .hoverDiv h2 {
-      font-size: 5em;
+    font-size: 5em;
   }
 
-  .about h2{
+  .about h2 {
     font-size: 5em;
   }
 
   .about p {
-      font-size: 2.5em;
+    font-size: 2.5em;
   }
 
   .work h2 {
-      font-size: 5em;
+    font-size: 5em;
   }
 
   .work h3 {
-      font-size: 1.75em;
+    font-size: 1.75em;
   }
 
   .work p {
-      max-width: 80%;
-      margin: 0 auto;
+    max-width: 80%;
+    margin: 0 auto;
   }
 
   .workHover {
@@ -77,17 +83,16 @@
   }
 
   .hoverable li{
-      font-size: 3em;
+    font-size: 3em;
   }
 
   .workContent h3 {
-      font-size: 3em;
+    font-size: 3em;
   }
 
   .work p {
-      margin: 1em auto;
-      font-size: 2.25em;
+    margin: 1em auto;
+    font-size: 2.25em;
   }
-
 
 } /* ends media query*/
