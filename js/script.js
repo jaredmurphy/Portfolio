@@ -1,15 +1,19 @@
 $(document).ready(function() {
 
+  const flexShow = $element => {
+    $element.css('display', 'flex');
+  };
+
   // show or hide menu
   $('.hamburger-container, .cross-container').click(function() {
-      if ($('.menu').is(':visible')) {
-            $('.menu').hide();
-            $('.nameTag').show();
-      } else {
-            $('.page').hide();
-            $('.menu').show();
-            $('.nameTag').hide();
-      }
+    if ($('.menu').is(':visible')) {
+      $('.menu').hide();
+      $('.nameTag').show();
+    } else {
+      $('.page').hide();
+      flexShow($('.menu'));
+      $('.nameTag').hide();
+    }
   });
 
   // show about, work, contact pages
@@ -17,7 +21,7 @@ $(document).ready(function() {
     $('.menu').hide();
     switch (true) {
       case $(this).hasClass('aboutButton'):
-        $('.about').show();
+        flexShow($('.about'))
         break;
       case $(this).hasClass('workButton'):
         $('.workContent').hide();
@@ -25,13 +29,13 @@ $(document).ready(function() {
         defaultWorkInfo();
         break;
       case $(this).hasClass('contactButton'):
-        $('.contact').show();
+        flexShow($('.contact'))
         break;
     }
   });
 
   // display current work info by default
-  var defaultWorkInfo = function() {
+  const defaultWorkInfo = () => {
     if ($('.work').css('display') === 'block') {
       $('.current').show();
     }
@@ -39,18 +43,19 @@ $(document).ready(function() {
 
   // display appropriate work content on hover
   $('.workHover li').hover(function() {
+    let content;
     switch (true) {
-        case $(this).hasClass('current'):
-            var $content = $('.current');
-            break;
-        case $(this).hasClass('other'):
-            var $content = $('.other');
-            break;
-        case $(this).hasClass('past'):
-            var $content = $('.past');
-            break;
-        default:
-            var $content = $('.blank');
+      case $(this).hasClass('current'):
+        $content = $('.current');
+        break;
+      case $(this).hasClass('other'):
+        $content = $('.other');
+        break;
+      case $(this).hasClass('past'):
+        $content = $('.past');
+        break;
+      default:
+        $content = $('.blank');
     }
     $('.workContent').hide();
     $('.openSource').hide();
@@ -59,15 +64,16 @@ $(document).ready(function() {
 
   // display appropriate open source content
   $('.openSourceHover li').hover(function() {
+    let content;
     switch (true) {
-        case $(this).hasClass('contributions'):
-            var $content = $('.contributed');
-            break;
-        case $(this).hasClass('original'):
-            var $content = $('.originalWork');
-            break;
-        default:
-            var $content = $('.blank');
+      case $(this).hasClass('contributions'):
+        $content = $('.contributed');
+        break;
+      case $(this).hasClass('original'):
+        $content = $('.originalWork');
+        break;
+      default:
+        $content = $('.blank');
     }
     $('.openSource').hide();
     $content.show();
